@@ -1,0 +1,99 @@
+.services {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .services h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2.5em;
+    color: #1D49A7;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .servicesGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .serviceItem {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 380px;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .serviceItem:hover {
+    transform: rotate(-2.5deg);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .imageContainer {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .imageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .serviceItem:hover .imageContainer img {
+    transform: scale(1.1);
+  }
+  
+  .content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .titleContainer h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    color: #1D49A7;
+    margin: 0px;
+    
+  }
+  
+  .titleContainer {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    gap: 10px; /* Espacio entre el ícono y el subtítulo */
+  }
+
+  .icon {
+    font-size: 1.5em;
+    color: #1D49A7;
+  }
+  
+  
+  /* Mantén el resto del código CSS como está */
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .servicesGrid {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .serviceItem {
+      max-width: 100%;
+    }
+  
+    .imageContainer {
+      height: 180px;
+    }
+  }

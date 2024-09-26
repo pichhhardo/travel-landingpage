@@ -1,0 +1,101 @@
+.hero {
+    position: relative;
+    width: 100%;
+    height: 80vh; /* Ajustable según tus necesidades */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Filtro oscuro */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+  }
+  
+  .heroContent {
+    text-align: center;
+    color: #fff;
+    z-index: 3;
+  }
+  
+  .title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 4em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+  
+  .subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    color: #fff;
+    margin-bottom: 1.5em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  }
+  
+  .ctaButton {
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #1D49A7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+  }
+  
+  .ctaButton:hover {
+    background-color: #4f71bb;
+  }
+  
+  .heroImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .title {
+      font-size: 3em;
+    }
+  
+    .subtitle {
+      font-size: 1.2em;
+    }
+  
+    .ctaButton {
+      font-size: 1em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title {
+      font-size: 2em;
+    }
+  
+    .subtitle {
+      font-size: 1em;
+    }
+  
+    .ctaButton {
+      font-size: 0.9em;
+    }
+  }

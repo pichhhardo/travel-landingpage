@@ -1,0 +1,95 @@
+.destinations {
+    width: 100%;
+    height: 600px; /* Altura fija para pantallas grandes */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imageWrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .imageWrapper img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4); /* Filtro oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  .title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 24em; /* Ajustado para pantallas grandes */
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    z-index: 2;
+  }
+  
+  /* Estilos para dispositivos medianos */
+  @media (max-width: 1024px) {
+    .destinations {
+      height: 400px; /* Altura ajustada para pantallas medianas */
+    }
+  
+    .title {
+      font-size: 16em; /* Tamaño de fuente ajustado */
+    }
+  }
+  
+  /* Estilos para dispositivos pequeños */
+  @media (max-width: 768px) {
+    .destinations {
+      height: 300px; /* Altura ajustada para dispositivos pequeños */
+    }
+  
+    .title {
+      font-size: 8em; /* Tamaño de fuente ajustado para dispositivos pequeños */
+    }
+  }
+  
+  /* Estilos para dispositivos extra pequeños */
+  @media (max-width: 480px) {
+    .destinations {
+      height: 250px; /* Altura ajustada para dispositivos extra pequeños */
+    }
+  
+    .title {
+      font-size: 6em; /* Tamaño de fuente ajustado para dispositivos extra pequeños */
+    }
+  }
+  
+  .slick-dots {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+  }

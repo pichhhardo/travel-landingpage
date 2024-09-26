@@ -1,0 +1,118 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logoContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 72px;
+    height: 100%;
+    margin-right: 10px;
+  }
+  
+  .logoText {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.5em;
+    color: #1D49A7;
+    margin: 0;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .nav a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 1em;
+    color: #1D49A7;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav a:hover {
+    color: #4f71bb; /* Azul más claro en hover */
+  }
+  
+  .cta {
+    display: flex;
+    align-items: center;
+    background-color: #1D49A7;
+    color: #fff!important; /* Texto blanco */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .cta:hover {
+    background-color: #4f71bb; /* Fondo azul más claro en hover */
+    color: #fff!important; /* Mantiene el texto blanco */
+  }
+  
+  .planeIcon {
+    margin-left: 10px;
+    color: #fff; /* Ícono blanco */
+    transition: transform 0.3s ease;
+  }
+  
+  .cta:hover .planeIcon {
+    transform: translateX(5px); /* Desplazamiento sutil hacia la derecha */
+    color: #fff; /* Mantiene el ícono blanco en hover */
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: center;
+      padding: 15px 20px;
+    }
+  
+    .logoText {
+      font-size: 1.2em;
+      text-align: center;
+      margin: 10px 0;
+    }
+  
+    .nav {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .nav a {
+      font-size: 1.2em;
+      padding: 10px 0;
+      width: 100%;
+      text-align: center;
+      border-top: 1px solid #ddd;
+    }
+  
+    .nav a:first-child {
+      border-top: none;
+    }
+  
+    .cta {
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+    }
+  
+    .planeIcon {
+      margin-left: 5px;
+    }
+  }
