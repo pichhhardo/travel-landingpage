@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import styles from '../styles/Footer.module.css';
@@ -10,14 +9,14 @@ const Footer: React.FC = () => {
       <div className={styles.container}>
         <div className={styles.logoSection}>
           <h2 className={styles.logoText}>Estrategia Turística Internacional SC</h2>
-          <p className={styles.tagline}><i>"Explora el mundo con nosotros."</i></p>
+          <p className={styles.tagline}><i>Explora el mundo con nosotros.</i></p>
         </div>
         <div className={styles.links}>
-          <Link href="/about">Sobre Nosotros</Link>
-          <Link href="/services">Servicios</Link>
-          <Link href="/contact">Contacto</Link>
-          <Link href="/privacy">Política de Privacidad</Link>
-          <Link href="/terms">Términos de Servicio</Link>
+          <a href="#about">Sobre Nosotros</a>
+          <a href="#services">Servicios</a>
+          <a href="#contact">Contacto</a>
+          <a href="#privacy">Política de Privacidad</a>
+          <a href="#terms">Términos de Servicio</a>
         </div>
         <div className={styles.socialMedia}>
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
@@ -31,9 +30,8 @@ const Footer: React.FC = () => {
           </a>
         </div>
         <div className={styles.copyright}>
-          <p>&copy; 2024 Estrategia Turística Internacional SC. Todos los derechos reservados.</p>
+        <p>&copy; 2024 Estrategia Turística Internacional SC. Todos los derechos reservados.</p>      </div>
         </div>
-      </div>
     </footer>
   );
 };

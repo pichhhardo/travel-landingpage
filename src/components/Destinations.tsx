@@ -29,7 +29,7 @@ const Destinations: React.FC = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    appendDots: (dots) => (
+    appendDots: (dots: React.ReactNode[]) => (
       <div style={{ bottom: '10px' }}>
         <ul style={{ margin: '0px', padding: '0px', textAlign: 'center' }}> {dots} </ul>
       </div>
